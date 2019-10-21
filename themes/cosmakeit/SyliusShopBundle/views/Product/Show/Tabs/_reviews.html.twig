@@ -1,0 +1,19 @@
+<div class="tab-pane fade" id="product-series-3" role="tabpanel"
+     aria-labelledby="product-tab-3">
+    <div class="shop-product__review">
+
+        {{ sonata_block_render_event('sylius.shop.product.show.tab_reviews', {'product': product}) }}
+        <div class="single-review">
+            <div class="single-review__content">
+                {{ render(url('sylius_shop_partial_product_review_latest', {'productId': product.id, 'template': '@SyliusShop/ProductReview/_list.html.twig'})) }}
+            </div>
+        </div>
+
+
+
+            {% include '@SyliusShop/ProductReview/_reviewCreate.html.twig'  %}
+
+    </div>
+</div>
+
+

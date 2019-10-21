@@ -1,0 +1,4 @@
+sylius_mailer:
+    sender:
+        name: CosMakeIt
+        address: loickremer@hotmail.com

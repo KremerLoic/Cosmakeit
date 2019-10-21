@@ -1,0 +1,37 @@
+{% set product = variant.product %}
+
+
+<td class="product-thumbnail">
+    {% if variant.hasImages %}
+        <a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">
+            {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': variant, 'filter': 'sylius_shop_product_small_thumbnail'} %}
+        </a>
+    {% else %}
+        <a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">
+            {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': product, 'filter': 'sylius_shop_product_small_thumbnail'} %}
+        </a>
+    {% endif %}
+</td>
+
+<td class="product-name">
+    <a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">
+        {{ item.productName }}
+    </a>
+
+    {% if product.hasOptions() %}
+        {% for optionValue in variant.optionValues %}
+            <span class="product-variation">
+                    {{ optionValue.value }}
+                </span>
+        {% endfor %}
+    {% elseif item.variantName is not null %}
+
+        <span class="product-variation">
+                {{ item.variantName }}
+            </span>
+
+    {% endif %}
+</td>
+
+
+

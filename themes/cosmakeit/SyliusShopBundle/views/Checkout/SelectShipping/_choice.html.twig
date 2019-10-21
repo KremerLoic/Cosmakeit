@@ -1,0 +1,10 @@
+{% import '@SyliusShop/Common/Macro/money.html.twig' as money %}
+
+
+{{ form_widget(form) }}
+<h4>{{ form_label(form) }}</h4>
+        {% if method.description is not null %}
+                <h6>{{ method.description }}</h6>
+        {% endif %}
+<h6> {{ money.convertAndFormat(fee) }}</h6>
+

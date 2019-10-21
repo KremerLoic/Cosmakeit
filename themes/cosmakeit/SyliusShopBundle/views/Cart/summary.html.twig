@@ -1,0 +1,49 @@
+{% extends '@SyliusShop/base.html.twig' %}
+
+{% form_theme form '@SyliusShop/Form/theme.html.twig' %}
+
+{% import '@SyliusUi/Macro/messages.html.twig' as messages %}
+
+{% set header = 'sylius.ui.your_shopping_cart' %}
+
+{% block title %}{{ parent() }} | {{ header|trans }}{% endblock %}
+
+{% block content %}
+    {% include '@SyliusShop/Cart/Summary/_breadcrumb.html.twig' %}
+    {% if not cart.empty %}
+        <div class="shopping-cart-area mb-130">
+            <div class="container">
+                <div class="row">
+                    {% include '@SyliusShop/Cart/Summary/_header.html.twig' %}
+
+                    {{ sonata_block_render_event('sylius.shop.cart.summary.after_content_header', {'cart': cart}) }}
+
+
+                    {{ sonata_block_render_event('sylius.shop.cart.summary.before_items', {'cart': cart}) }}
+
+                    {% include '@SyliusShop/Cart/Summary/_items.html.twig' %}
+
+                    {{ sonata_block_render_event('sylius.shop.cart.summary.after_items', {'cart': cart}) }}
+
+
+                    {{ sonata_block_render_event('sylius.shop.cart.summary.before_totals', {'cart': cart}) }}
+
+                    {% include '@SyliusShop/Cart/Summary/_totals.html.twig' %}
+
+                    {{ sonata_block_render_event('sylius.shop.cart.summary.after_totals', {'cart': cart}) }}
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+        <div class="container mt-50 mb-100">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h4 class="text-center mt-50 mb-50"> {{ 'sylius.ui.your_cart_is_empty'|trans }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

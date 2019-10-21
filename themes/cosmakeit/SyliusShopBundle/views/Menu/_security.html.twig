@@ -1,0 +1,28 @@
+<div class="header-right-container">
+    <div class="header-right-icons d-flex justify-content-end align-items-center h-100">
+        {% if is_granted('ROLE_USER') %}
+        <div class="single-icon">
+            <a href="{{ path('sylius_shop_account_dashboard') }}" class="item">
+                <i class="ion-android-person"></i>
+            </a>
+        </div>
+        <div class="single-icon">
+            <a href="{{ path('sylius_shop_logout') }}" class="item">
+                <i class="ion-log-out"></i>
+            </a>
+        </div>
+            {% else %}
+                <div class="single-icon user-login">
+                    <a href="{{ path('sylius_shop_login') }}" class="item">
+                        <i class="ion-android-person"></i>
+                    </a>
+                </div>
+                <div class="single-icon user-register">
+                    <a href="{{ path('sylius_shop_register') }}" class="item">
+                        <i class="ion-person-add"></i>
+                    </a>
+                </div>
+
+            {% endif %}
+        </div>
+    </div>

@@ -1,0 +1,21 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+{% set state = order.paymentState %}
+
+{% if state != 'cart' %}
+    {% include "@SyliusShop/Common/Order/Label/PaymentState/orderPaymentState.html.twig" %}
+{% endif %}
+
+{% for payment in order.payments %}
+    {% set state = payment.state %}
+    {% set value = 'sylius.ui.' ~ state %}
+
+
+            <h4 class="header" id="sylius-payment-method">
+                {{ payment.method }}
+
+            {{ money.format(payment.amount, payment.currencyCode) }}</h4>
+
+
+
+{% endfor %}

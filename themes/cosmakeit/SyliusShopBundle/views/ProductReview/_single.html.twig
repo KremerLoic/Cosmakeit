@@ -1,0 +1,20 @@
+
+
+<div class="single-review">
+    <div class="single-review__content">
+        <div class="shop-product__rating">
+            <div class="product-rating">
+                {% set star = review.rating %}
+                {% for i in range(1, star) %}
+                    <i class="fa fa-star"></i>
+                {% endfor %}
+            </div>
+        </div>
+        <p class="username">{{ review.author.email }}</p>
+        <div class="metadata">
+            <span class="title"><strong>{{ review.title }}</strong></span>
+            <span class="date">{{ review.createdAt|format_date }}</span>
+        </div>
+        <p class="message">{{ review.comment }}</p>
+    </div>
+</div>

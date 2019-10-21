@@ -1,0 +1,17 @@
+<div class="row justify-content-center mt-40 mb-40">
+    <div class="col-lg-6 ">
+        <div class="card">
+        <table class="ui celled table" id="sylius-order">
+            <thead>
+            {% include '@SyliusShop/Common/Order/Table/_headers.html.twig' %}
+            </thead>
+            <tbody>
+            {% include '@SyliusShop/Common/Order/Table/_items.html.twig' %}
+            </tbody>
+            <tfoot>
+            {% include '@SyliusShop/Common/Order/Table/_totals.html.twig' %}
+            </tfoot>
+        </table>
+        </div>
+    </div>
+</div>

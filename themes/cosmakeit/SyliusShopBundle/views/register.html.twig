@@ -1,0 +1,21 @@
+{% extends '@SyliusShop/base.html.twig' %}
+
+{% form_theme form '@SyliusShop/Form/theme.html.twig' %}
+
+{% block content %}
+    {% include '@SyliusShop/Register/_header.html.twig' %}
+
+    {{ sonata_block_render_event('sylius.shop.register.after_content_header') }}
+<div class="text-center mb-60">
+    <h2> →  <a href="{{ path('sylius_shop_login') }}" class="ui right floated basic button">{{ 'sylius.ui.have_an_account_already'|trans }} {{ 'sylius.ui.sign_in_here'|trans }}. </a> ←</h2>
+</div>
+
+
+    {{ sonata_block_render_event('sylius.shop.register.before_form') }}
+                    {{ form_start(form, {'action': path('sylius_shop_register'), 'attr': {'class': 'ui loadable form', 'novalidate': 'novalidate'}}) }}
+                    {% include '@SyliusShop/Register/_form.html.twig' %}
+                    {{ sonata_block_render_event('sylius.shop.register.form', {'form': form}) }}
+                    {{ form_row(form._token) }}
+                    {{ form_end(form, {'render_rest': false}) }}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+<div class="row mt-50">
+    <div class="col-12">
+        <div class="d-flex justify-content-around">
+
+            <div>
+                <h3>{{ 'sylius.ui.shipping_address'|trans }}</h3>
+                {% include '@SyliusShop/Common/_address.html.twig' with {'address': order.shippingAddress} %}
+            </div>
+            <div>
+                <h3>{{ 'sylius.ui.billing_address'|trans }}</h3>
+                {% include '@SyliusShop/Common/_address.html.twig' with {'address': order.billingAddress} %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

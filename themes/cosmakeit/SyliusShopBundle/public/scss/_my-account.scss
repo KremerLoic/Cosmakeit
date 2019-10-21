@@ -1,0 +1,57 @@
+
+/*=============================================
+=            28. My account            =
+=============================================*/
+
+.login-form{
+    background-color: #F7F7F7;
+    padding: 60px 50px;
+
+    @media #{$extra-small-mobile}{
+        padding: 50px 20px;
+    }
+    
+    &--register{
+        padding: 60px 50px; 
+
+        @media #{$extra-small-mobile}{
+            padding: 50px 20px;
+        }
+        label{
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #333;
+            letter-spacing: 1px; 
+            text-transform: uppercase;
+
+            span{
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+.remember-text{
+    font-size: 16px;
+    line-height: 25px;
+    color: #333;
+    font-weight: 500;
+}
+
+.reset-pass-link{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+    margin-top: 20px;
+
+    &:hover{
+        color: #333;
+    }
+}
+
+
+
+/*=====  End of 28. My account  ======*/
+

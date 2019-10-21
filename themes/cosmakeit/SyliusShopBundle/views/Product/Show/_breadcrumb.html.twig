@@ -1,0 +1,35 @@
+
+
+<!--=======  breadcrumb area =======-->
+
+<div class="breadcrumb-area breadcrumb-bg-2 pt-50 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="breadcrumb-title">{{ product.name|trans }}</h1>
+
+                {% if product.mainTaxon is not null %}
+                {% set taxon = product.mainTaxon %}
+                {% set ancestors = taxon.ancestors|reverse %}
+
+                {% for ancestor in ancestors %}
+                    <ul class="breadcrumb-list">
+                {% if ancestor.isRoot() %}
+                    <a href="{{ path('sylius_shop_homepage') }}" class="section"><li class="breadcrumb-list__item">{{ 'sylius.ui.home'|trans }}</li></a>
+                {% else %}
+                <!--=======  breadcrumb list  =======-->
+                    <li class="breadcrumb-list__item"><a href="{{ path('sylius_shop_product_index', {'slug': ancestor.slug, '_locale': ancestor.translation.locale}) }}" class="section">{{ ancestor.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                        <li class="breadcrumb-list__item"><a href="{{ path('sylius_shop_product_index', {'slug': taxon.slug, '_locale': taxon.translation.locale}) }}" class="section">{{ taxon.name }}</a></li>
+                <!--=======  End of breadcrumb list  =======-->
+                {% endif %}
+                        <li class="breadcrumb-list__item">{{ product.name }}</li>
+
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--=======  End of breadcrumb area =======-->

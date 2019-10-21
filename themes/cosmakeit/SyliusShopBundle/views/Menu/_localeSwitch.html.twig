@@ -1,0 +1,33 @@
+{% if locales|length > 1 %}
+    <div class="ui dropdown item" id="sylius-locale-selector">
+
+        <div class="menu">
+            <nav class="site-nav">
+                <ul>
+                    <li class="menu-item-has-children"><a href="javascript:void(0)">{%  if active == 'en_US' %} English {% else %} Français {% endif %}</a>
+
+                        <ul class="sub-menu single-column-menu">
+                            {% for code in locales %}
+                            {% if code is not same as(active) %}
+                            <li>
+                                <a href="{{ path('sylius_shop_switch_locale', {'code': code}) }}"
+                                   class="item sylius-available-locale">
+                                    {% if code == 'en_US' %}
+                                   EN
+                                    {% else %}
+                                    FR
+                                    {% endif %}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+{% endif %}
+
+

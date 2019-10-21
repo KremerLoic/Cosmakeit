@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e4e8dbd-3e8d-4314-ad06-ed4fd5f3096a" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cmi_dev@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cmi_dev@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="cmi_dev: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>billing</find>
+      <find>menu &gt; div</find>
+      <find>HWIO</find>
+      <find>logout</find>
+      <find>field</find>
+      <find>search</find>
+      <find>criteria</find>
+      <find>required</find>
+      <find>pagination</find>
+      <find>pagina</find>
+      <find>paginati</find>
+      <find>product_rating</find>
+      <find>Lexer</find>
+      <find>php-stan</find>
+      <find>phpstan</find>
+      <find>PhpParser</find>
+      <find>autoload</find>
+      <find>^n4.1</find>
+      <find>DebugClassLoader</find>
+      <find>Symfony/Component</find>
+      <find>Refle</find>
+      <find>header</find>
+      <find>header-without</find>
+      <find>aliceb</find>
+      <find>single-product__content</find>
+      <find>taxon</find>
+      <find>Syliusmailer</find>
+      <find>/login</find>
+      <find>Product</find>
+      <find>customer</find>
+    </findStrings>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-hydrator" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-stdlib" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/theofidry/alice-data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/thecodingmachine/safe" />
+      <path value="$PROJECT_DIR$/vendor/sylius/resource-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sylius/fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sylius/mailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sylius/grid-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sylius/theme-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sylius/sylius" />
+      <path value="$PROJECT_DIR$/vendor/sylius/registry" />
+      <path value="$PROJECT_DIR$/vendor/symplify/easy-coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/behat/behat" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/phpspec" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan-shim" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/lakion/mink-debug-extension" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/hateoas-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/hateoas" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/slam/php-cs-fixer-extensions" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-hostname-parser" />
+      <path value="$PROJECT_DIR$/vendor/hwi/oauth-bundle" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-schemes" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-components" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-parser" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-manipulations" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/payum/payum-bundle" />
+      <path value="$PROJECT_DIR$/vendor/payum/payum" />
+      <path value="$PROJECT_DIR$/vendor/payum/iso4217" />
+      <path value="$PROJECT_DIR$/vendor/winzou/state-machine" />
+      <path value="$PROJECT_DIR$/vendor/winzou/state-machine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/behat/mink-selenium2-driver" />
+      <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/vendor/behat/mink" />
+      <path value="$PROJECT_DIR$/vendor/behat/mink-extension" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/behat/mink-browserkit-driver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/thanks" />
+      <path value="$PROJECT_DIR$/vendor/symfony/class-loader" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/sylius-labs/association-hydrator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/sylius-labs/coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/core-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/intl-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friends-of-behat/variadic-extension" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/cache" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/datagrid-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friends-of-behat/suite-settings-extension" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/block-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friends-of-behat/symfony-extension" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/friends-of-behat/page-object-extension" />
+      <path value="$PROJECT_DIR$/vendor/polishsymfonycommunity/symfony-mocker-container" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/slevomat/coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/oauth2-php" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/oauth-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/instaclick/php-webdriver" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/gaufrette" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-gaufrette-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-menu-bundle" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/symplify/coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/symplify/token-runner" />
+      <path value="$PROJECT_DIR$/vendor/symplify/better-phpdoc-parser" />
+      <path value="$PROJECT_DIR$/vendor/symplify/package-builder" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
+      <path value="$PROJECT_DIR$/vendor/white-october/pagerfanta-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/stopwatch-plugin" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/lchrusciel/api-test-case" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle6-adapter" />
+      <path value="$PROJECT_DIR$/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/vendor/php-http/logger-plugin" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/coduo/php-to-string" />
+      <path value="$PROJECT_DIR$/vendor/coduo/php-matcher" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Rn7PXQ809eK2SGPufMs0R6LerZ" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="SearchEverywhereHistoryKey" value="_box&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_box.html.twig&#10;show.html&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/show.html.twig&#10;services.&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;form&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/Favorite/form.html.twig&#10;service&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;_syl&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/packages/_sylius.yaml&#10;addCart&#9;null&#9;null&#10;addToCart&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/sylius/src/Sylius/Bundle/CoreBundle/Form/Type/Order/AddToCartType.php&#10;form.html&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/Favorite/form.html.twig&#10;show&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/show.html.twig&#10;serv&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;routes.&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes.yaml&#10;services&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;services.yaml&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;Reso&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php&#10;ResourceController&#9;null&#9;null&#10;services.yam&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;horizontallis&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_horizontalList.html.twig&#10;repository&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/grid-bundle/src/Bundle/test/src/AppBundle/Repository/BookRepository.php&#10;routes&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes.yaml&#10;route&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/symfony/framework-bundle/Tests/Fixtures/Descriptor/route_1.json&#10;liip&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes/liip_imagine.yaml&#10;_syli&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/packages/_sylius.yaml&#10;Favorite&#9;null&#9;null&#10;Route&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes.yaml&#10;swift&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/packages/test/swiftmailer.yaml&#10;swiftmail&#9;null&#9;null&#10;profileupdate.htm&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Account/profileUpdate.html.twig&#10;createChargeAction&#9;null&#9;null&#10;style.css&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/public/assets/shop/css/style.css&#10;slider&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Homepage/_slider.html.twig&#10;main.css&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/public/assets/cosmakeit/shop/main.css&#10;box&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_boxSmall.html.twig&#10;hori&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_horizontalList.html.twig&#10;routes.yaml&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes.yaml&#10;product&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/sylius/src/Sylius/Bundle/CoreBundle/Doctrine/ORM/ProductRepository.php&#10;repo&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/src/Repository/ProductRepository.php&#10;rout&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/routes.yaml&#10;ho&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_horizontalList.html.twig&#10;_hor&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_horizontalList.html.twig&#10;syliu&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/packages/_sylius.yaml&#10;horizontalLis&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/themes/cosmakeit/SyliusShopBundle/views/Product/_horizontalList.html.twig&#10;_syliu&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/packages/_sylius.yaml&#10;ProductReposi&#9;null&#9;null&#10;indexAction&#9;null&#9;null&#10;ser&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/config/services.yaml&#10;resource&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/resource-bundle/src/Bundle/Controller/ResourceController.php&#10;routing&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/friendsofsymfony/rest-bundle/Resources/config/routing.xml&#10;Customer.php&#9;FILE&#9;file:///Users/loic/Documents/TFE/cmi-3/vendor/sylius/sylius/src/Sylius/Component/Customer/Model/Customer.php&#10;UserInterface&#9;null&#9;null" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Oracle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Entity/Favorite" />
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusShopBundle/views/Product" />
+      <recent name="$PROJECT_DIR$/config/routes" />
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusShopBundle/views/Product/Favorites" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusShopBundle/views/Product/Preference" />
+      <recent name="$PROJECT_DIR$/public/assets/admin/css" />
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusAdminBundle/views" />
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusUiBundle/views" />
+      <recent name="$PROJECT_DIR$/themes/cosmakeit/SyliusShopBundle/views/Product" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="behat.yml.dist" type="PhpBehatConfigurationType">
+      <BehatRunner scope="Yml" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e4e8dbd-3e8d-4314-ad06-ed4fd5f3096a" name="Default" comment="" />
+      <created>1562683978766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562683978766</updated>
+      <workItem from="1562683986831" duration="1585000" />
+      <workItem from="1564312427174" duration="8468000" />
+      <workItem from="1564324086314" duration="56719000" />
+      <workItem from="1564562969093" duration="101979000" />
+      <workItem from="1565018724036" duration="64755000" />
+      <workItem from="1565777060070" duration="8468000" />
+      <workItem from="1568051651097" duration="15390000" />
+      <workItem from="1568290912513" duration="6745000" />
+      <workItem from="1568551846021" duration="8695000" />
+      <workItem from="1568625349106" duration="13116000" />
+      <workItem from="1568665836509" duration="128000" />
+      <workItem from="1568741844961" duration="15769000" />
+      <workItem from="1568795073893" duration="28388000" />
+      <workItem from="1568884955165" duration="6811000" />
+      <workItem from="1568918965415" duration="11483000" />
+      <workItem from="1568971239581" duration="25771000" />
+      <workItem from="1569065252722" duration="24808000" />
+      <workItem from="1569188330097" duration="4287000" />
+      <workItem from="1569229916359" duration="12539000" />
+      <workItem from="1569260488145" duration="15925000" />
+      <workItem from="1569280057396" duration="27000" />
+      <workItem from="1569318184011" duration="15159000" />
+      <workItem from="1569337839015" duration="14893000" />
+      <workItem from="1569405943042" duration="21181000" />
+      <workItem from="1569492632376" duration="22610000" />
+      <workItem from="1569518568556" duration="4180000" />
+      <workItem from="1569582773168" duration="37595000" />
+      <workItem from="1569665213320" duration="34660000" />
+      <workItem from="1569759958331" duration="21526000" />
+      <workItem from="1570290064927" duration="163000" />
+      <workItem from="1570291005134" duration="802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/sylius/sylius/src/Sylius/Bundle/CoreBundle/Controller/ProductTaxonController.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+
+        <div class="col-12 mb-60">
+            <h4 class="checkout-title">{{ 'sylius.ui.total'|trans }}</h4>
+            <div class="checkout-cart-total">
+                <h4>{{ 'sylius.ui.product'|trans }} <span>{{ 'sylius.ui.total'|trans }}</span></h4>
+                <ul>
+                    {% for item in order.items %}
+
+                            <li>{{ item.getVariant.product.name }} X {{ item.quantity }} <span>{{ money.convertAndFormat(item.subtotal) }}</span></li>
+
+                    {% endfor %}
+                </ul>
+
+
+
+                <p>{{ 'sylius.ui.tax'|trans }}<span>{{ money.convertAndFormat(order.taxTotal) }}</span></p>
+                <p>{{ 'sylius.ui.shipping'|trans }}<span>{{ money.convertAndFormat(order.shippingTotal) }}</span></p>
+                <p>{{ 'sylius.ui.discount'|trans }}<span>{{ money.convertAndFormat(order.orderPromotionTotal) }}</span></p>
+                <p>{{ 'sylius.ui.order_total'|trans }}<span>{{ money.convertAndFormat(order.total) }}</span></p>
+
+            </div>
+        </div>

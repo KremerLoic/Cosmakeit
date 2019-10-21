@@ -1,0 +1,17 @@
+{% extends '@SyliusShop/base.html.twig' %}
+
+{% block content %}
+    {% include '@SyliusShop/Homepage/_slider.html.twig' %}
+    <div class="container-fluid">
+
+        <h2 class="text-center cmi-title">Produit(s) sélectionné(s) : </h2>
+
+        {{ render(url('app_shop_custom_find_by_preference', {'limit': 4})) }}
+    </div>
+    <div class="container-fluid customcolor">
+        <h2 class="text-center pt-60 cmi-title">
+            {{ 'sylius.ui.latest_products'|trans }} :
+        </h2>
+        {{ render(url('sylius_shop_partial_product_index_latest', {'count': 8, 'template': '@SyliusShop/Product/_horizontalListSmall.html.twig'})) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% for image in product.images %}
+    {% if loop.index == 2 %}
+        {% set path = image.path|imagine_filter('sylius_shop_product_large_thumbnail') %}
+            <img src="{{ path }}"
+                 data-large-thumbnail="{{ image.path|imagine_filter('sylius_shop_product_large_thumbnail') }}"
+                 alt="{{ product.name }}" class="img-fluid"/>
+    {% endif %}
+{% endfor %}
+
+

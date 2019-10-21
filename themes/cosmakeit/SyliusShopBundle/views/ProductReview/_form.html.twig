@@ -1,0 +1,37 @@
+
+
+    <div class="lezada-form lezada-form--review">
+        <div class="row">
+
+
+            {% if not is_granted("IS_AUTHENTICATED_FULLY") %}
+                <div class="col-lg-6 mb-20">
+                    {{ form_widget(form.author.email, {'attr': { 'placeholder': 'sylius.ui.email'|trans, 'class': 'review'}}) }}
+                    {{ form_errors(form.author.email) }}
+                </div>
+            {% endif %}
+            <div class="col-lg-6 mb-20">
+
+                {{ form_widget(form.title, {'attr': {'placeholder': 'sylius.ui.title'|trans , 'class': 'review'} }) }}
+                {{ form_errors(form.title) }}
+            </div>
+            <br/>
+            <div class="col-lg-6 mb-20">
+                <span class="product-rating">
+                    {{ form_errors(form.rating) }}
+                    <p class="rating-title mr-30">Note</p>
+                    {{ form_widget(form.rating, {'attr' : {'class': 'rate'}}) }}
+                </span>
+            </div>
+            <div class="col-lg-12 mb-20">
+                {{ form_widget(form.comment, {'attr': {'placeholder': 'sylius.ui.write_your_own_review'|trans, 'class':'review', 'cols' : 30 , 'rows': 10} }) }}
+                {{ form_errors(form.comment) }}
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+

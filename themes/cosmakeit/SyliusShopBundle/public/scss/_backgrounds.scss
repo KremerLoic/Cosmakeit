@@ -1,0 +1,210 @@
+
+/*=============================================
+=            09. Backgrounds            =
+=============================================*/
+
+
+/*----------  lookbook home backgrounds  ----------*/
+
+
+.lookbook-bg-1{
+    background-image: url('../images/parallax-bg/bg-parallax-1.jpg');
+}
+
+.lookbook-bg-2{
+    background-image: url('../images/parallax-bg/bg-parallax-2.jpg');
+}
+
+.lookbook-bg-3{
+    background-image: url('../images/parallax-bg/bg-parallax-3.jpg');
+}
+
+.lookbook-bg-4{
+    background-image: url('../images/parallax-bg/bg-parallax-4.jpg');
+}
+
+.lookbook-bg-5{
+    background-image: url('../images/decor-four/banner-1.jpg');
+}
+
+
+/*----------  about backgrounds  ----------*/
+
+.about-video-bg-1{
+    background-image: url('../images/category/bg-video-about-us-large.png');
+}
+
+.about-video-bg-2{
+    background-image: url('../images/backgrounds/video-about.png');
+}
+
+
+
+/*----------  countdown backgrounds  ----------*/
+
+.countdown-bg-1{
+    background-image: url('../images/countdown/bg-countdown-1.jpg');
+    background-color: #F9F9F9;
+}
+
+.countdown-bg-2{
+    background-image: url('../images/countdown/bg-countdown-2.jpg');
+    background-color: #F9F9F9;
+}
+
+.countdown-bg-3{
+    background-color: #F9F9F9;
+}
+
+.countdown-bg-4{
+    background-color: #F4F4F4;
+}
+
+
+/*----------  breadcrumb backgrounds   ----------*/
+
+
+.breadcrumb-bg-1 {
+    background-image: url('../images/breadcrumb-bg/01.jpg');
+}
+
+.breadcrumb-bg-2 {
+    background-image: url('../images/breadcrumb-bg/background-heading-page.png');
+}
+
+
+/*----------  testimonial backgrounds  ----------*/
+
+.testimonial-bg-1{
+    background-image: url('../images/backgrounds/bg-testimonials.png');
+    background-repeat: no-repeat;
+}
+
+.testimonial-bg-2{
+    background-image: url('../images/backpack-one/testimonial.jpg');
+    background-repeat: no-repeat;
+}
+
+
+
+/*----------  page backgrounds  ----------*/
+
+.bg-404{
+    background-image: url('../images/backgrounds/404-bg.jpg');
+}
+
+.bg-coming-soon{
+    background-image: url('../images/backgrounds/bg-coming-soon.png');
+}
+
+.mc-newsletter-blue-bg{
+    background-color: #6D7F96;
+}
+
+.mc-newsletter-red-bg{
+    background-color: #D11830;
+}
+
+.newsletter-content-bg-1{
+    background-image: url('../images/backgrounds/popup.jpg');
+}
+
+
+.newsletter-content{
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.nothing-found-area{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @media #{$tablet-device}{
+        background-position-x: 40%;
+    }
+    
+    @media #{$small-mobile}{
+        background-position-x: 20%;
+    }
+    
+    @media #{$extra-small-mobile}{
+        background-position-x: 45%;
+    }
+}
+
+.coming-soon-area{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @media #{$tablet-device}{
+        background-position-x: 70%;
+    }
+    
+    
+    @media #{$large-mobile}{
+        background-position-x: 60%;
+    }
+    
+    @media #{$small-mobile}{
+        background-position-x: 20%;
+    }
+    
+    @media #{$extra-small-mobile}{
+        background-position-x: 45%;
+    }
+}
+
+
+.grey-bg{
+    background-color: #F8F8F8 !important; 
+}
+
+.dark-grey-bg{
+    background-color: #5e5656; 
+}
+
+
+.dark-bg{
+    background-color: #191717; 
+}
+
+.countdown-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.single-lookbook-section{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+/*----------  single category textbanner   ----------*/
+
+.single-category-textbanner-bg{
+    background-image: url('../images/category/brand.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*----------  about video background area  ----------*/
+
+.about-video-bg-area{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+/*=====  End of 09. Backgrounds  ======*/
+

@@ -1,0 +1,8 @@
+hwi_oauth:
+    firewall_names: [shop]
+    resource_owners:
+        facebook:
+            type: facebook
+            client_id: 649396788917483
+            client_secret: aba84160bb10f63673b04e91a6e03b99
+            scope: "email"

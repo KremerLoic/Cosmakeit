@@ -1,0 +1,22 @@
+{% import '@SyliusUi/Macro/messages.html.twig' as messages %}
+{% import '@SyliusUi/Macro/pagination.html.twig' as pagination %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="col-lg-12 order-1 order-lg-2 mt-80 mb-md-80 mb-sm-80">
+            <div class="row product-isotope shop-product-wrap four-column">
+                <!--=======  single product  =======-->
+                {% for product in products %}
+                    {% include '@SyliusShop/Product/_box.html.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {{ sonata_block_render_event('sylius.shop.product.index.before_pagination', {'products': products}) }}
+    <div class="d-flex justify-content-center mb-30">
+    </div>
+
+    {{ messages.info('sylius.ui.no_results_to_display') }}
+
+{% endblock %}

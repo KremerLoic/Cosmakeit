@@ -1,0 +1,36 @@
+{% form_theme form '@SyliusShop/Form/theme.html.twig' %}
+
+{% set product = product_review.reviewSubject %}
+
+
+<div class="twelve wide column">
+    <div class="ui segment">
+        <div class="ui dividing header">
+            <div class="review-title mb-20">
+            {{ 'sylius.ui.write_your_own_review'|trans }}
+            </div>
+            <div class="text-center">
+                {{ 'sylius.ui.you_are_reviewing'|trans }} <strong>{{ product.name }}</strong>.
+            </div>
+                <div class="beforeForm"></div>
+        </div>
+
+        {{ sonata_block_render_event('sylius.shop.product_review.create.before_form', {'product_review': product_review}) }}
+
+        {{ form_start(form, {'method': 'POST', 'action': path('sylius_shop_product_review_create', {'slug': product.slug, '_locale': product.translation.locale}), 'attr': { 'novalidate': 'novalidate'}}) }}
+        {% include '@SyliusShop/ProductReview/_form.html.twig' %}
+
+        {{ sonata_block_render_event('sylius.shop.product_review.create.form', {'product_review': product_review, 'form': form}) }}
+
+        {{ form_row(form._token) }}
+        <div class="col-lg-12 text-center">
+            <button type="submit" id="reviewSubmit" class="lezada-button lezada-button--medium">
+                {{ 'sylius.ui.add'|trans }}
+            </button>
+            {{ form_end(form, {'render_rest': false}) }}
+        </div>
+    </div>
+</div>
+
+
+

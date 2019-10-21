@@ -1,0 +1,47 @@
+{% extends '@SyliusShop/base.html.twig' %}
+
+{% block content %}
+    <div class="container mt-200 mb-200">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 text-center">
+                {% set lastPayment = order.payments.last() %}
+                <h4> {{ 'sylius.ui.thank_you'|trans }}</h4>
+                <h5>{{ 'sylius.ui.placed_an_order'|trans }}</h5>
+            </div>
+        </div>
+
+        {{ sonata_block_render_event('sylius.shop.order.thank_you.after_message', {'order': order}) }}
+
+        {% if lastPayment != false %}
+            {% if lastPayment.method.instructions is not null %}
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 text-center">
+                        <h4>
+                            {{ lastPayment.method.instructions }}
+                        </h4>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="row d-flex justify-content-center">
+                <div class="ui hidden divider"></div>
+                <div class="col-lg-4 text-center">
+                    <a href="{{ path('sylius_shop_account_order_show', {'tokenValue': order.tokenValue, 'id' : order.id , 'number': order.number}) }}"
+                       id="sylius-show-order"
+                       class="lezada-button lezada-button--medium">{{ 'sylius.ui.view'|trans }}</a>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if order.customer.user is null %}
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <a href="{{ path('sylius_shop_register_after_checkout', {'tokenValue': order.tokenValue}) }}"
+                       class="lezada-button lezada-button--medium mt-30">
+                        {{ 'sylius.ui.create_an_account'|trans }}
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

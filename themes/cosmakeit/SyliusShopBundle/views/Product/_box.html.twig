@@ -1,0 +1,78 @@
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+
+{{ sonata_block_render_event('sylius.shop.product.index.before_box', {'product': product}) }}
+
+
+
+<!--=======  single product  =======-->
+<div class="col-12 col-lg-4 col-md-6 col-sm-6 mb-45">
+    <div class="single-product">
+        <!--=======  single product image  =======-->
+
+        <div class="single-product__image">
+            <a class="image-wrap" href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}">
+                {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': product} %}
+                {% include '@SyliusShop/Product/_secondImage.html.twig' with {'product': product} %}
+            </a>
+
+            <div class="single-product__floating-badges">
+                <span class="onsale">//TODO</span>
+            </div>
+
+            <div class="single-product__floating-icons">
+                                            <span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
+                                                            class="ion-android-favorite-outline"></i></a></span>
+                <span class="compare"><a href="#" data-tippy="Compare"
+                                         data-tippy-inertia="true"
+                                         data-tippy-animation="shift-away"
+                                         data-tippy-delay="50" data-tippy-arrow="true"
+                                         data-tippy-theme="sharpborder"
+                                         data-tippy-placement="left"><i
+                                class="ion-ios-shuffle-strong"></i></a></span>
+                <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                           data-tippy="Quick View" data-tippy-inertia="true"
+                                           data-tippy-animation="shift-away"
+                                           data-tippy-delay="50" data-tippy-arrow="true"
+                                           data-tippy-theme="sharpborder"
+                                           data-tippy-placement="left"><i
+                                class="ion-ios-search-strong"></i></a></span>
+            </div>
+        </div>
+
+        <!--=======  End of single product image  =======-->
+
+        <!--=======  single product content  =======-->
+
+        <div class="single-product__content">
+            <div class="title">
+                <h3><a>{{ product.name }}</a></h3>
+                {% if not product.simple %}
+                    <a>{% include '@SyliusShop/Product/Show/_notSimpleShow.html.twig' %}</a>
+                {% else %}
+                    <a>{% include '@SyliusShop/Product/Show/_inventory.html.twig' %}</a>
+                {% endif %}
+            </div>
+            {% if not product.variants.empty() %}
+            <div class="price">
+                <span class="main-price discounted">{{ money.calculatePrice(product|sylius_resolve_variant) }}</span>
+                <span class="discounted-price">{{ money.calculatePrice(product|sylius_resolve_variant) }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <!--=======  End of single product content  =======-->
+    </div>
+</div>
+<!--=======  End of single product  =======-->
+
+
+
+
+
+
+{{ sonata_block_render_event('sylius.shop.product.index.after_box', {'product': product}) }}

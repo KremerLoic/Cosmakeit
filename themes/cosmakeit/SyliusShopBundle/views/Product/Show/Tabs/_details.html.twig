@@ -1,0 +1,15 @@
+
+<div class="tab-pane fade show active" id="product-series-1" role="tabpanel"
+     aria-labelledby="product-tab-1">
+    {{ sonata_block_render_event('sylius.shop.product.show.tab_details', {'product': product}) }}
+
+    {% if product.description is not empty %}
+    <div class="shop-product__long-desc mb-30">
+        {{ product.description | nl2br }}
+    </div>
+    {% else %}
+        <div class="shop-product__long-desc mb-30">
+        {{ 'sylius.ui.no_description'|trans }}.
+</div>
+    {% endif %}
+</div>

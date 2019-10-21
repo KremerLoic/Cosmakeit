@@ -1,0 +1,214 @@
+
+/*=============================================
+=            04. Section title            =
+=============================================*/
+
+
+/*----------  default style  ----------*/
+
+
+
+.section-title{
+    margin-bottom: -5px;
+    h1{
+        font-size: 48px;
+        line-height: 64px;
+        margin-top: -13px;
+        margin-bottom: 15px;
+
+        @media #{$tablet-device}{
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        @media #{$large-mobile}{
+            font-size: 36px;
+            line-height: 52px;
+        }
+
+        @media #{$small-mobile}{
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        @media #{$extra-small-mobile}{
+            font-size: 25px;
+            line-height: 41px;
+        }
+
+        a{
+            color: #333; 
+            display: inline-block;
+
+            
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+    }
+
+    p{
+        line-height: 26px;
+
+        &.subtitle{
+            &--deep{
+                font-size: 14px;
+                color: #333;
+                font-weight: 500;
+                margin-bottom: 35px;
+                line-height: 24px;
+                letter-spacing: 1px;
+                margin-top: -5px;
+            }
+
+            &--trending-home{
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+                margin-bottom: 0;
+
+                @media #{$large-mobile}{
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                @media #{$small-mobile}{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    &--concepthome{
+            h1{
+                @media #{$desktop-device}{
+                    font-size: 40px;
+                }
+                @media #{$extra-small-mobile}{
+                    font-size: 40px;
+                }
+            }
+    }
+
+    &__label{
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 0;
+
+            span{
+                &:before{
+                    display: inline-block;
+                    content: '';
+                    width: 50px;
+                    height: 1px;
+                    background-color: #cccccc;
+                    margin: 0 15px 5px 15px;
+                }
+            }
+        }
+
+        &--left{
+            position: absolute;
+            transform: rotate(90deg) translate(30%, 300%);
+            
+        }
+
+        &--right{
+            position: absolute;
+            transform: rotate(-90deg);
+            right: -15px;
+        }
+
+
+    }
+
+    &__label-style2{
+        p{
+            font-weight: 500;
+        }
+
+        &--left{
+            position: absolute;
+            top: 250px;
+            
+        }
+
+        &--right{
+            position: absolute;
+            top: 250px;
+        }
+    }
+
+    &__label-style3{
+        p{
+            font-weight: 500;
+        }
+
+        &--left{
+            position: static;
+            transform: none;
+        }
+
+        &--right{
+            position: static;
+            transform: none;
+        }
+    }
+
+    &--one{
+        &--collectionhome{
+            font-size: 18px;
+            line-height: 28px;
+            color: #333;
+        }
+
+       
+    }
+
+    &--login{
+        h2{
+            font-size: 34px;
+            line-height: 48px;
+            color: #333;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+
+/*----------  slider title  ----------*/
+
+.widget-slider-title{
+    font-size: 20px;
+    line-height: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 35px;
+    position: relative;
+    padding-right: 60px;
+}
+
+
+/*----------  section label  ----------*/
+
+.section-label{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+/*=====  End of 04. Section title  ======*/
+

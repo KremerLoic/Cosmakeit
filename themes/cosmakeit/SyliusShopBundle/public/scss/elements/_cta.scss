@@ -1,0 +1,51 @@
+
+/*=============================================
+=            34. Call to action             =
+=============================================*/
+
+.cta-area{
+    background-color: #6D7F96;
+}
+
+.cta-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$large-mobile}{
+        flex-direction: column;
+    }
+}
+
+.cta-title{
+    h2{
+        font-size: 35px;
+        line-height: 38px;
+        color: #fff;
+
+        @media #{$large-mobile}{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media #{$extra-small-mobile}{
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+.lezada-cta-button{
+    background-color: #fff;
+    color: #333 !important;
+    border-color: #fff;
+
+    &:hover{
+        background-color: #333;
+        color: #fff !important;
+        border-color: #333;
+    }
+}
+/*=====  End of 34. Call to action   ======*/
+

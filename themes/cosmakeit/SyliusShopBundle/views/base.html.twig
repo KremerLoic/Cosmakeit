@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="{{ app.request.locale|slice(0, 2) }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block title %}CosMakeIt - Créez vos propres cosmétiques 100% naturels sans difficultés!{% endblock %}</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    {% block metatags %}
+    {% endblock %}
+
+    {% block stylesheets %}
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+        <![endif]-->
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/helper.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/plugins.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/themify-icons.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/helper.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/bootstrap.min.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/main.css'} %}
+
+        <!-- Revolution Slider CSS -->
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/revolution/css/settings.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/revolution/css/navigation.css'} %}
+        {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/cosmakeit/shop/revolution/custom-setting.css'} %}
+
+        {{ sonata_block_render_event('sylius.shop.layout.stylesheets') }}
+
+
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/vendor/modernizr-2.8.3.min.js'} %}
+    <script src="https://kit.fontawesome.com/71dc23f5f3.js"></script>
+
+    {% endblock %}
+    {{ sonata_block_render_event('sylius.shop.layout.head') }}
+</head>
+
+{{ sonata_block_render_event('sylius.shop.layout.before_body') }}
+
+
+        {% block header %}
+
+
+                {% include '@SyliusShop/_header.html.twig' %}
+
+                {{ sonata_block_render_event('sylius.shop.layout.after_header') }}
+
+        {% endblock %}
+
+        {% include '@SyliusShop/_flashes.html.twig' %}
+
+        {{ sonata_block_render_event('sylius.shop.layout.before_content') }}
+
+        {% block content %}
+        {% endblock %}
+
+        {{ sonata_block_render_event('sylius.shop.layout.after_content') }}
+
+
+    {% block footer %}
+        {% include '@SyliusShop/_footer.html.twig' %}
+    {% endblock %}
+
+
+{% block javascripts %}
+    <!-- old JS to remove later -->
+    <!-- JS -->
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/vendor/jquery.min.js'} %}
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/popper.min.js'} %}
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/bootstrap.min.js'} %}
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/plugins.js'} %}
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/main.js'} %}
+    {% include '@SyliusUi/_javascripts.html.twig' with {'path': 'assets/cosmakeit/shop/js/app.js'} %}
+
+
+
+
+
+    {{ sonata_block_render_event('sylius.shop.layout.javascripts') }}
+{% endblock %}
+
+{% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+{{ sonata_block_render_event('sylius.shop.layout.after_body') }}
+</body>
+</html>

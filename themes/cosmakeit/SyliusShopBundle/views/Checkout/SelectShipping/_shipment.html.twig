@@ -1,0 +1,35 @@
+{% set enabled = order.shipments|length %}
+<div class="ui four d-flex justify-content-center steps col-12">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center align-self-center">
+                    <div class="column">
+                        <a href="{{ path('sylius_shop_checkout_address') }}"
+                           class="lezada-button lezada-button--medium"> {{ 'sylius.ui.change_address'|trans }}</a>
+                    </div>
+                </div>
+                <div class="col-lg-4  text-center card">
+                    <h4 class="mt-20">{{ 'sylius.ui.shipment'|trans }} #{{ loop.index }}</h4>
+                    {{ form_errors(form.method) }}
+                    {% for key, choice_form in form.method %}
+                        <div class="mb-20">
+                            {% set fee = form.method.vars.shipping_costs[choice_form.vars.value] %}
+                            <h4> {% set method = form.method.vars.choices[key].data %}</h4>
+                            {% include '@SyliusShop/Checkout/SelectShipping/_choice.html.twig' with {'form': choice_form, 'method': method, 'fee': fee} %}
+                        </div>
+                    {% else %}
+                        <div>
+                            {% include '@SyliusShop/Checkout/SelectShipping/_unavailable.html.twig' %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 text-center align-self-center">
+                    <button type="submit" id="next-step"
+                            class="lezada-button lezada-button--medium{% if not enabled %} disabled{% endif %} button">
+                        {{ 'sylius.ui.next'|trans }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

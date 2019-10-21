@@ -1,0 +1,20 @@
+{% import '@SyliusUi/Macro/buttonsShop.html.twig' as buttons %}
+{% import '@SyliusUi/Macro/flags.html.twig' as flags %}
+
+<h3 class="ui header">
+    <div class="text-center mt-40">
+        {{ 'sylius.ui.order'|trans }} #{{ order.number }}
+        <div class="sub header">
+            <div class="ui horizontal divided list">
+                <div class="item">
+                    {{ order.checkoutCompletedAt|format_date }}
+                </div>
+                <div class="item">
+                    {% include [('@SyliusShop/Account/Order/Label/State' ~ '/' ~ order.state ~ '.html.twig'), '@SyliusUi/Label/_default.html.twig'] with {'value': ('sylius.ui.' ~ order.state)|trans} %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</h3>
+

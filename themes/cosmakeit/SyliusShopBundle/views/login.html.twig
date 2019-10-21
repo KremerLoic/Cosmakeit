@@ -1,0 +1,33 @@
+{% extends '@SyliusShop/base.html.twig' %}
+
+{% form_theme form 'SyliusUiBundle:Form:theme.html.twig' %}
+
+{% import 'SyliusUiBundle:Macro:messages.html.twig' as messages %}
+
+{% block content %}
+
+    {% include '@SyliusShop/Login/_breadcrumb.html.twig' %}
+    <div class="login-area mb-130 mb-md-70 mb-sm-70 mb-xs-70 mb-xxs-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-md-50 mb-sm-50">
+                    <div class="lezada-form login-form">
+                        {{ form_start(form, {'action': path('sylius_shop_login_check'), 'attr': {'class': 'ui loadable form', 'novalidate': 'novalidate'}}) }}
+                        {% include '@SyliusShop/Login/_form.html.twig' %}
+                        {{ sonata_block_render_event('sylius.shop.login.form', {'form': form}) }}
+                        <input type="hidden" name="_csrf_shop_security_token" value="{{ csrf_token('shop_authenticate') }}">
+
+                        {{ form_end(form, {'render_rest': false}) }}
+
+                        {{ sonata_block_render_event('sylius.shop.login.after_login') }}
+                    </div>
+
+
+                </div>
+                {% include '@SyliusShop/Account/_changePasswordUrl.html.twig' %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

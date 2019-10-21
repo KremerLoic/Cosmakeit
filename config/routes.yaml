@@ -1,0 +1,66 @@
+app_shop_partial_product_index_latest_by_taxon_code:
+    path: /latest/{code}/{count} # configure a new path that has all the needed variables
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.product:indexAction # you make a call on the Product Controller's index action
+        _sylius:
+            template: $template
+            repository:
+                method: findLatestByChannelAndTaxonCode # here use the new repository method
+                arguments:
+                    - "expr:service('sylius.context.channel').getChannel()"
+                    - $code
+                    - $count
+
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix: /oauth-login/connect
+
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix: /oauth-login/connect
+
+hwi_oauth_login:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix: /oauth-login/login
+
+facebook:
+    path: /oauth-login/check-facebook
+
+app_shop_custom_find_by_preference:
+    path: /home/index
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.product:indexAction
+        _sylius:
+            template: '@SyliusShop/Product/_horizontalListSmall.html.twig'
+            repository:
+                method: findPreferedProduct
+                arguments:
+                    - $limit
+
+
+
+app_shop_add_favorite:
+    path: /productAddFavorite/{product}
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.shop_user:addFavoriteProduct
+        _sylius:
+            template: '@SyliusShop/Product/show.html.twig'
+            repository:
+              method: getFavoriteProduct
+              arguments:
+                -$product
+
+
+
+
+app_shop_show_favorite:
+    path: /tesst/{id}
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.shop_user:getFavoritesProducts
+
+

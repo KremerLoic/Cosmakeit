@@ -1,0 +1,51 @@
+{% extends '@SyliusShop/Checkout/layout.html.twig' %}
+
+{% form_theme form '@SyliusShop/Form/theme.html.twig' %}
+
+{% block content %}
+    {% include '@SyliusShop/Checkout/_breadcrumb.html.twig' %}
+
+    {% include '@SyliusShop/Checkout/_steps.html.twig' %}
+
+    {{ sonata_block_render_event('sylius.shop.checkout.address.after_steps', {'order': order}) }}
+
+    <div class="checkout-page-area mb-130 checkout-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="lezada-form">
+                        <!-- Checkout Form s-->
+                        <div class="row row-40">
+                            <div class="col-lg-7 mb-20">
+                                {{ sonata_block_render_event('sylius.shop.checkout.address.before_form', {'order': order}) }}
+
+                                {{ form_start(form, {'action': path('sylius_shop_checkout_address'), 'attr': {'class': '', 'novalidate': 'novalidate'}}) }}
+                                {{ form_errors(form) }}
+                                <input type="hidden" name="_method" value="PUT"/>
+
+                                {% include '@SyliusShop/Checkout/Address/_form.html.twig' %}
+
+
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    {{ sonata_block_render_event('sylius.shop.checkout.address.before_summary', {'order': order}) }}
+
+                                    {% include '@SyliusShop/Checkout/_summary.html.twig' with {'order': order} %}
+
+                                    {{ sonata_block_render_event('sylius.shop.checkout.address.before_navigation', {'order': order}) }}
+
+                                    {% include '@SyliusShop/Checkout/Address/_navigation.html.twig' %}
+
+                                    {{ sonata_block_render_event('sylius.shop.checkout.address.after_navigation', {'order': order}) }}
+                                    {{ form_row(form._token) }}
+                                    {{ form_end(form, {'render_rest': false}) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
